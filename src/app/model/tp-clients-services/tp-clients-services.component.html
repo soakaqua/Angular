@@ -1,0 +1,21 @@
+<hr>
+<br>
+<table>
+  <tr>
+    <td>prenom</td>
+    <td>nom</td>
+    <td>ca</td>
+  </tr>
+  <tr *ngFor="let c of serviceClient.clients; let i=index">
+    <td>{{c.prenom}}</td>
+    <td>{{c.nom}}</td>
+    <td>{{c.ca}}</td>
+    <td><button><a [routerLink]="['/ajoutclient',i]" routerLinkActive="active">modifier</a></button></td>
+    <td><button (click)="supprimer(i)">supprimer</button></td>
+  </tr>
+<br>
+  <li><a [routerLink]="['/ajoutclient']" routerLinkActive="active">Ajouter Client</a></li>
+
+
+</table>
+<br>

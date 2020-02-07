@@ -1,0 +1,19 @@
+
+<table>
+  <tr>
+    <td>prénom : </td>
+    <td> <input  [(ngModel)]="client.prenom"> </td>
+  </tr>
+  <tr>
+    <td>nom : </td>
+    <td> <input [(ngModel)]="client.nom"> </td>
+  </tr>
+  <tr>
+    <td>ca : </td>
+    <td> <input [(ngModel)]="client.ca"> </td>
+  </tr>
+</table>
+<br>
+  <button (click)="ajouter()">Ajouter</button>
+  <button (click)="cancel()">Annuler</button>
+

@@ -1,0 +1,25 @@
+<hr>
+<br>
+<div>
+
+  filtre : <input [(ngModel)]="filtre">
+  <br>
+  <br>
+  <table>
+    <tr>
+      <td>prenom</td>
+      <td>nom</td>
+      <td>ca</td>
+    </tr>
+    <tr *ngFor="let c of filter()">
+      <td>{{c.prenom}}</td>
+      <td>{{c.nom}}</td>
+      <td>{{c.ca | perso:'param1':'param2'}}</td>
+    </tr>
+
+  </table>
+  <br>
+
+  <app-client-comp (ajoutC)="ajoutAList($event)"></app-client-comp>
+
+</div>

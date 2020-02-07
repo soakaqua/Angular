@@ -1,0 +1,20 @@
+<hr>
+<br>
+<div class="client">
+
+  <div><input [(ngModel)]="client.prenom"></div>
+  <div><input [(ngModel)]="client.nom"></div>
+  <div><input [(ngModel)]="client.ca "></div>
+<!--  <div *ngIf="toto.ca != 0 && toto.prenom !='' && toto.nom !=''"><button  (click)="testRempli()">clique ici</button></div>-->
+<!--<div><button  (click)="testRempli()">clique ici</button></div>-->
+<!--&lt;!&ndash;  <div *ngIf="display()==true" [ngClass]="{'rouge': client.ca<0}"><h3>{{messageClient}}</h3></div>&ndash;&gt;-->
+<!--&lt;!&ndash;  ici on test les inputs ! avec le composant cacher &ndash;&gt;-->
+<!--    <div *ngIf="display()==true" [ngClass]="{'rouge': client.ca<0}"><h3>{{client.prenom}}{{client.nom}} <app-cacher [ca]="client.ca" [hidde]="true"></app-cacher></h3></div>-->
+<!--</div>-->
+
+<!--  AJOUT POUR ajout tableau-->
+  <br>
+  <button (click)="ajoutClient()">Ajouter client</button>
+
+</div>
+<!--<div><app-asc-bold-element prefix="Voici le nom " [text]="client.nom"></app-asc-bold-element></div>-->
